@@ -16,3 +16,12 @@ Features
 - Automatic arena regeneration
 - Arena leave checker
 - Player rewards
+
+Version 2.0 - Mattc4t
+- Fixed compability issues with 1.13.2 that had broken arena setup.
+- Rebuilt against WE 7.0.
+- Modified updater code to log gracefully when it fails to connect to the updater URL site.
+- Fixed block plink sound constant.
+
+
+
