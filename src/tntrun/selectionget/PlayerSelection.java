@@ -21,6 +21,7 @@ import java.util.HashSet;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
+import org.bukkit.Material;
 import org.bukkit.entity.Player;
 
 public class PlayerSelection {
@@ -52,12 +53,12 @@ public class PlayerSelection {
 
 	@SuppressWarnings("deprecation")
 	public void setSelectionPoint1(Player player) {
-		ownlocations.putPlayerLoc1(player.getName(), player.getTargetBlock((HashSet<Byte>) null, 30).getLocation());
+		ownlocations.putPlayerLoc1(player.getName(), player.getTargetBlock((HashSet<Material>) null, 30).getLocation());
 	}
 
 	@SuppressWarnings("deprecation")
 	public void setSelectionPoint2(Player player) {
-		ownlocations.putPlayerLoc2(player.getName(), player.getTargetBlock((HashSet<Byte>) null, 30).getLocation());
+		ownlocations.putPlayerLoc2(player.getName(), player.getTargetBlock((HashSet<Material>) null, 30).getLocation());
 	}
 
 	public void clearSelectionPoints(Player player) {

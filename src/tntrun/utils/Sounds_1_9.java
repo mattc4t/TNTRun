@@ -7,7 +7,7 @@ public class Sounds_1_9 extends Sounds {
 
 	@Override
 	public void NOTE_PLING(Player p, float volume, float pitch) {
-		p.playSound(p.getLocation(), Sound.valueOf("BLOCK_NOTE_PLING"), volume, pitch);
+		p.playSound(p.getLocation(), Sound.valueOf("BLOCK_NOTE_BLOCK_PLING"), volume, pitch);
 	}
 
 	@Override

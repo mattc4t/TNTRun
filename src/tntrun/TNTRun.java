@@ -116,13 +116,8 @@ public class TNTRun extends JavaPlugin {
 		
 		checkUpdate(true);
 		
-		String version = Bukkit.getBukkitVersion().split("-")[0];
-		if(version.contains("1.9") || version.contains("1.10")){
-			sound = new Sounds_1_9();
-		}else{
-			sound = new Sounds_1_8();
-		}
-		
+		sound = new Sounds_1_9();
+
 	     try {
 	    	 Bukkit.getLogger().info("[TNTRun] Starting Metrics...");
 	         Metrics metrics = new Metrics(this);
@@ -195,7 +190,7 @@ public class TNTRun extends JavaPlugin {
 				String[] version = VersionChecker.get().getVersion().split(";");
 				ver = version;
 				if(version[0].equalsIgnoreCase("error")){
-					throw new NullPointerException("An error was occured while checking version! Please report this here: https://www.spigotmc.org/threads/tntrun.67418/");
+					return;
 				}else{
 					ver = version;
 					if(version[0].equalsIgnoreCase(getDescription().getVersion())){

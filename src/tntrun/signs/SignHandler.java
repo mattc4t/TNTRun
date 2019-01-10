@@ -18,6 +18,7 @@
 package tntrun.signs;
 
 import java.util.HashMap;
+import java.util.logging.Level;
 
 import org.bukkit.block.Sign;
 import org.bukkit.entity.Player;

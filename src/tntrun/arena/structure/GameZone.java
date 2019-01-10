@@ -6,9 +6,6 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
-import me.tade.trgrenade.Main;
-import me.tade.trgrenade.ParticleEffect;
-
 import org.bukkit.Bukkit;
 import org.bukkit.Effect;
 import org.bukkit.Location;
@@ -17,6 +14,7 @@ import org.bukkit.World;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
 import org.bukkit.block.BlockState;
+import org.bukkit.inventory.MainHand;
 import org.bukkit.scheduler.BukkitRunnable;
 import org.bukkit.scheduler.BukkitScheduler;
 import org.bukkit.scheduler.BukkitTask;
@@ -103,20 +101,20 @@ public class GameZone {
 		saveBlock(block);
 	}
 	
-	public void removeBlocksGrenade(Location loc) {
+/*	public void removeBlocksGrenade(Location loc) {
 		for(Block b : Main.getBlockInRadius(loc, 2.5D, 999.9D).keySet()){
 			if (!blockstodestroy.contains(b)) {
 				if(b.getLocation().add(0, 1, 0).getBlock().getType() == Material.AIR){
 					if(Main.getInstance().mat.contains(b.getType())){
 						removeGLBlocks(b);
-						if(Main.getInstance().getConfig().getBoolean("useparticles")){
+						if(TNTRun.getInstance().getConfig().getBoolean("useparticles")){
 							ParticleEffect.FIREWORKS_SPARK.display(0.5F, 0.5F, 0.5F, 0.05F, 10, b.getLocation(), 50);
 						}
 					}
 				}
 			}
 		}
-	}
+	}*/
 	
 	private static double PLAYER_BOUNDINGBOX_ADD = 0.3;
 	
